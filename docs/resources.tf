@@ -54,15 +54,6 @@ resource "docker_container" "dind" {
     internal = 2376
     external = 2376
   }
-  ports {
-    internal = 3000
-    external = 3000
-  }
-  ports {
-    internal = 5000
-    external = 5000
-  }
-
 }
 
 resource "docker_container" "jenkins_blueocean" {
